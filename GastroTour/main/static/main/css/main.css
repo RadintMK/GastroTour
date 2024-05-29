@@ -1,0 +1,148 @@
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-decoration: none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+    overflow-x: hidden;
+    background-color: rgba(232, 232, 232, 1);
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.main {
+    background-color: rgba(232, 232, 232, 1);
+    padding: 0 0 61px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .top {
+    background-size: 100% 100%;
+    background-position: center;
+    background-image: url("/static/main/img/background.png");
+    padding: 26px 685px 124px 109px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .flex-wrapper-one {
+    margin-bottom: 80px;
+    display: flex;
+    align-items: flex-start;
+  }
+  .logo {
+    font-family: "Inter";
+    font-size: 40px;
+    font-weight: 800;
+    line-height: normal;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    margin-right: 363px;
+  }
+  .top-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .top-btn {
+    font-family: "Inter";
+    font-size: 40px;
+    font-weight: 600;
+    line-height: normal;
+    color: rgba(236, 236, 236, 1);
+    text-align: center;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .top-btn:not(:last-of-type) {
+    margin-right: 84px;
+  }
+  .title {
+    max-width: 523px;
+    font-family: "Inter";
+    font-size: 72px;
+    font-weight: 800;
+    line-height: normal;
+    color: rgba(236, 236, 236, 1);
+    text-align: center;
+    margin-left: 589px;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.7);
+  }
+  .rectangle-1 {
+    width: 1920px;
+    height: 16px;
+    background-color: rgba(83, 83, 83, 1);
+    margin-bottom: 29px;
+  }
+  .about {
+    max-width: 1718px;
+    font-family: "Inter";
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+    color: rgba(0, 0, 0, 1);
+    text-align: center;
+    margin-bottom: 45px;
+    letter-spacing: 2px;
+  }
+  .popular-now {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .title2 {
+    font-family: "Inter";
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58px;
+    color: rgba(0, 0, 0, 1);
+    text-align: center;
+    margin-bottom: 45px;
+    letter-spacing: 2.4px;
+  }
+  .group-1 {
+    background-color: rgba(217, 217, 217, 1);
+    padding: 29px 115px 30px;
+    display: flex;
+    align-items: center;
+  }
+  .frame-1 {
+    display: flex;
+    align-items: flex-start;
+  }
+  .rectangle-2 img {
+    width: 658px;
+    height: 409px;
+  }
+  .rectangle-2 h3 {
+  text-align: center;
+  font-family: "Inter";
+  font-size: 40px;
+  font-weight: 600;
+
+  }
+  .rectangle-2:not(:last-of-type) {
+    margin-right: 200px;
+  }

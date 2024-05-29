@@ -1,0 +1,129 @@
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+  overflow-x: hidden;
+  background-color: rgba(232, 232, 232, 1);
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+.tury-two {
+  background-color: rgba(232, 232, 232, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.top {
+  background-color: rgba(46, 47, 52, 1);
+  margin-bottom: 98px;
+  padding: 26px 721px 26px 109px;
+  display: flex;
+  align-items: center;
+}
+.logo {
+  font-family: "Inter";
+  font-size: 40px;
+  font-weight: 800;
+  line-height: normal;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  margin-right: 363px;
+}
+.top-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tury {
+  font-family: "Inter";
+  font-size: 40px;
+  font-weight: 600;
+  line-height: normal;
+  color: rgba(236, 236, 236, 1);
+  text-align: center;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.tury:not(:last-of-type) {
+  margin-right: 84px;
+}
+.title {
+  font-family: "Inter";
+  font-size: 64px;
+  font-weight: 700;
+  line-height: normal;
+  color: rgba(0, 0, 0, 1);
+  text-align: center;
+  margin-bottom: 133px;
+  margin-left: 875px;
+}
+.group-2 {
+  background-color: rgba(217, 217, 217, 1);
+  margin-left: 114px;
+  padding: 29px 974px 31px 36px;
+  display: flex;
+  align-items: center;
+}
+.group-2:not(:last-of-type) {
+  margin-bottom: 61px;
+}
+.tour-block-inner {
+  display: flex;
+  align-items: flex-start;
+}
+.tour-img img{
+  width: 400px;
+  height: 272px;
+  margin-right: 88px;
+}
+.frame-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.r-title {
+  font-family: "Inter";
+  font-size: 48px;
+  font-weight: 700;
+  line-height: normal;
+  color: rgba(0, 0, 0, 1);
+  text-align: center;
+}
+.r-title:not(:last-of-type) {
+  margin-bottom: 49px;
+}
+.group-2-two {
+  background-color: rgba(217, 217, 217, 1);
+  margin-bottom: 61px;
+  margin-left: 109px;
+  padding: 29px 974px 31px 36px;
+  display: flex;
+  align-items: center;
+}
+.group-2-three {
+  background-color: rgba(217, 217, 217, 1);
+  margin-bottom: 61px;
+  margin-left: 119px;
+  padding: 29px 974px 31px 36px;
+  display: flex;
+  align-items: center;
+}

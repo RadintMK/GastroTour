@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href={% static "main/css/pay.css" %}>
+    <title>Главная</title>
+</head>
+<body>
+    <div class="oplata">
+        <div class="top">
+          <p><a href="{% url "home" %}" class="logo">ГастроТур</a></p>
+          <div class="top-menu">
+            <a href="{% url 'tours'%}" class="tury">Туры</a>
+            <a href="{% url "aboutus" %}" class="tury">О нас</a>
+            <a href="{% url "cart" %}" class="tury">Корзина</a>
+          </div>
+        </div>
+        <p class="title">Оплата</p>
+        <div class="frame-5">
+          <div class="name">
+            <input type="text" id="fio" name="fio" class="fio" placeholder="Введите ФИО">
+        </div>
+        <div class="name">
+            <input type="tel" id="phone" name="phone" class="t-number" placeholder="Введите номер телефона">
+        </div>
+        <div class="name">
+            <input type="email" id="email" name="email" class="fio" placeholder="Введите e-mail">
+        </div>
+        </div>
+        <p class="k-oplate">К оплате: {{ cost }} руб.</p>
+        <img
+        alt=""
+        class="check-1"
+        src="{% static "main/img/confirm.png"%}"
+        onclick="goToHomePage()"
+        />
+      </div>
+      <script>
+        function goToHomePage() {
+          window.location.href = '/';
+      }
+      </script>
+</body>
+</html>

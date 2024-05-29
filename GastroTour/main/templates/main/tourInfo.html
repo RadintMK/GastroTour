@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href={% static "main/css/tourInfo.css" %}>
+    <title>Главная</title>
+</head>
+<body>
+    <div class="informacija-o-ture">
+        <div class="top">
+          <p><a href="{% url "home" %}" class="logo">ГастроТур</a></p>
+          <div class="top-menu">
+            <a href="{% url 'tours'%}" class="tury">Туры</a>
+            <a href="{% url "aboutus" %}" class="tury">О нас</a>
+            <a href="{% url "cart" %}" class="tury">Корзина</a>
+          </div>
+        </div>
+        <p class="title">Информация о туре</p>
+        <div class="info">
+          <div class="rectangle-6">
+            <img src="{{ restaurant.image.url }}" alt="{{ restaurant.name }}">
+        </div>
+        <div class="frame-3">
+            <p class="r-title">{{ restaurant.name }}</p>
+            <p class="country">{{ restaurant.country }}</p>
+            <p class="rate">{{ restaurant.rating }}</p>
+            <p class="cost">{{ restaurant.price }}</p>
+        </div>
+        </div>
+        <div class="frame-4">
+          <button type="button" class="buy-tour-btn" data-restaurant-id="{{ restaurant.name }}" onclick="redirectToPayPage(this)">
+            <img
+                alt="Купить"
+                class="cards-1"
+                src="{% static "main/img/pay.png"%}"
+            />
+        </button>
+          <button type="button" class="add-to-cart-btn" data-restaurant-id="{{ restaurant.name }}">
+            <img
+                alt="Добавить в корзину"
+                class="cards-1"
+                src="{% static "main/img/cart.png"%}"
+            />
+        </button>
+        </div>
+        <p class="info-title">Чем славится {{ restaurant.name }}</p>
+        <p class="info-text">
+          {{ restaurant.description }}
+        </p>
+      </div>
+      <script src="{% static "main/js/tourInfo.js" %}"></script>
+</body>
+</html>

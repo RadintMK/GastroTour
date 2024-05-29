@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href={% static "main/css/main.css" %}>
+    <title>Главная</title>
+</head>
+<body>
+    <div class="main">
+        <div class="top">
+          <div class="flex-wrapper-one">
+            <p><a href="{% url "home" %}" class="logo">ГастроТур</a></p>
+            <div class="top-menu">
+              <a href="{% url 'tours'%}" class="top-btn">Туры</a>
+              <a href="{% url "aboutus" %}" class="top-btn">О нас</a>
+              <a href="{% url "cart" %}" class="top-btn">Корзина</a>
+            </div>
+          </div>
+          <p class="title">Туры по мировым Кухням</p>
+        </div>
+        <div class="rectangle-1"></div>
+        <p class="about">
+          Вас приветствует ГастроТур, где каждая поездка – это
+          гастрономическое приключение! Мы предлагаем уникальные
+          туры по лучшим ресторанам мира, известным своими самыми
+          необычными и экстравагантными блюдами. Позвольте нам
+          провести вас через удивительные кулинарные маршруты,
+          которые покорят ваше сердце и вкусовые рецепторы.
+        </p>
+        <div class="popular-now">
+          <p class="title2">Популярно сейчас</p>
+          <div class="group-1">
+            <div class="frame-1">
+              {% if geranium %}
+                <div class="rectangle-2">
+                  <img src="{{ geranium.image.url }}" alt="{{ geranium.name }}" data-id="{{ geranium.name }}" onclick="redirectToTourInfo(this)">
+                    <h3>{{ geranium.name }}</h3>
+                </div>
+              {% endif %}
+              {% if geranium %}
+                <div class="rectangle-2">
+                  <img src="{{ geranium.image.url }}" alt="{{ geranium.name }}" data-id="{{ geranium.name }}" onclick="redirectToTourInfo(this)">
+                    <h3>{{ geranium.name }}</h3>
+                </div>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        function redirectToTourInfo(element) {
+            var tourId = element.getAttribute('data-id');
+
+            window.location.href = `/tour-info/${tourId}/`;
+        }
+        </script>
+</body>
+</html>

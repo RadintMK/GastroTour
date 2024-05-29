@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href={% static "main/css/cart.css" %}>
+    <title>Корзина</title>
+</head>
+<body>
+    <div class="korzina">
+        <div class="top">
+            <p><a href="{% url "home" %}" class="logo">ГастроТур</a></p>
+            <div class="top-menu">
+                <a href="{% url 'tours'%}" class="tury">Туры</a>
+                <a href="{% url "aboutus" %}" class="tury">О нас</a>
+                <a href="{% url "cart" %}" class="tury">Корзина</a>
+            </div>
+        </div>
+        <p class="title">Корзина</p>
+        <div class="cart-items">
+            {% for item in cart_items %}
+                <div class="tour-block">
+                    <div class="group-2">
+                        <div class="tour-block-inner">
+                            <div class="tour-img">
+                                <img src="{{ item.restaurant.image.url }}" alt="{{ item.restaurant.name }}">
+                            </div>
+                            <div class="frame-2">
+                                <p class="r-title">{{ item.restaurant.name }}</p>
+                                <p class="r-title">{{ item.restaurant.country }}</p>
+                                <p class="r-title">{{ item.restaurant.price }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="buy-tour-btn" data-restaurant-id="{{ item.restaurant.name }}" onclick="redirectToPayPage(this)">
+                    <img
+                        alt=""
+                        class="cards-2"
+                        src="{% static "main/img/pay.png"%}"
+                    />
+                    </button>
+                </div>
+            {% empty %}
+                <p>Ваша корзина пуста.</p>
+            {% endfor %}
+        </div>
+    </div>
+    <script>
+        function redirectToPayPage(element) {
+            var restaurantName = element.getAttribute('data-restaurant-id');
+            var encodedRestaurantName = encodeURIComponent(restaurantName);
+            var payUrl = `/pay/${encodedRestaurantName}/`;
+            window.location.href = payUrl;
+        }        
+    </script>
+</body>
+</html>

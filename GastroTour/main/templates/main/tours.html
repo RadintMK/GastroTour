@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href={% static "main/css/tours.css" %}>
+    <title>Главная</title>
+</head>
+<body>
+    <div class="tury-two">
+        <div class="top">
+          <p><a href="{% url "home" %}" class="logo">ГастроТур</a></p>
+          <div class="top-menu">
+            <a href="{% url 'tours'%}" class="tury">Туры</a>
+            <a href="{% url "aboutus" %}" class="tury">О нас</a>
+            <a href="{% url "cart" %}" class="tury">Корзина</a>
+          </div>
+        </div>
+        <p class="title">Туры</p>
+        {% for restaurant in continents %}
+        <div class="group-2">
+          <div class="tour-block-inner" data-id="{{ restaurant.name }}">
+            <div class="tour-img"><img src="{{ restaurant.image.url }}" alt="{{ restaurant.name }}"></div>
+            <div class="frame-2">
+              <p class="r-title">{{ restaurant.name }}</p>
+              <p class="r-title">{{ restaurant.country }}</p>
+              <p class="r-title">{{ restaurant.price }} руб.</p>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+      <script src="{% static "main/js/tours.js" %}"></script>
+</body>
+</html>

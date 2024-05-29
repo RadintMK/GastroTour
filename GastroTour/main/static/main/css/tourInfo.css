@@ -1,0 +1,182 @@
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-decoration: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+    overflow-x: hidden;
+    background-color: rgba(232, 232, 232, 1);
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.informacija-o-ture {
+    background-color: rgba(232, 232, 232, 1);
+    padding: 0 0 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .top {
+    background-color: rgba(46, 47, 52, 1);
+    margin-bottom: 98px;
+    padding: 26px 721px 26px 109px;
+    display: flex;
+    align-items: center;
+  }
+  .logo {
+    font-family: "Inter";
+    font-size: 40px;
+    font-weight: 800;
+    line-height: normal;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    margin-right: 363px;
+  }
+  .top-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .tury {
+    font-family: "Inter";
+    font-size: 40px;
+    font-weight: 600;
+    line-height: normal;
+    color: rgba(236, 236, 236, 1);
+    text-align: center;
+  }
+  .tury:not(:last-of-type) {
+    margin-right: 84px;
+  }
+  .title {
+    font-family: "Inter";
+    font-size: 64px;
+    font-weight: 700;
+    line-height: normal;
+    color: rgba(0, 0, 0, 1);
+    text-align: center;
+    margin-bottom: 120px;
+    margin-left: 640px;
+  }
+  .info {
+    margin-bottom: 39px;
+    margin-left: 109px;
+    display: flex;
+    align-items: center;
+  }
+  .rectangle-6 img {
+    width: 764px;
+    height: 456px;
+    margin-right: 62px;
+  }
+  .frame-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .r-title {
+    height: 57px;
+    width: 124px;
+    font-family: "Inter";
+    font-size: 48px;
+    font-weight: 700;
+    line-height: normal;
+    color: rgba(0, 0, 0, 1);
+    display: flex;
+    text-align: center;
+    margin-bottom: 76px;
+  }
+  .country {
+    height: 58px;
+    width: 193px;
+    font-family: "Inter";
+    font-size: 48px;
+    font-weight: 700;
+    line-height: normal;
+    color: rgba(0, 0, 0, 1);
+    display: flex;
+    text-align: center;
+    margin-bottom: 76px;
+  }
+  .rate {
+    height: 57px;
+    width: 107px;
+    font-family: "Inter";
+    font-size: 48px;
+    font-weight: 700;
+    line-height: normal;
+    color: rgba(0, 0, 0, 1);
+    display: flex;
+    text-align: center;
+    margin-bottom: 76px;
+  }
+  .cost {
+    height: 57px;
+    width: 112px;
+    font-family: "Inter";
+    font-size: 48px;
+    font-weight: 700;
+    line-height: normal;
+    color: rgba(0, 0, 0, 1);
+    display: flex;
+    text-align: center;
+  }
+  .frame-4 {
+    margin-left: 109px;
+    display: flex;
+    align-items: flex-start;
+  }
+  .cards-1 {
+    width: 156px;
+    height: 156px;
+  }
+  .cards-1:not(:last-of-type) {
+    margin-right: 115px;
+  }
+  .info-title {
+    font-family: "Inter";
+    font-size: 48px;
+    font-weight: 700;
+    line-height: normal;
+    color: rgba(0, 0, 0, 1);
+    text-align: center;
+    margin-bottom: 112px;
+    margin-left: 723px;
+  }
+  .info-text {
+    max-width: 1745px;
+    font-family: "Inter";
+    font-size: 36px;
+    font-weight: 500;
+    line-height: normal;
+    color: rgba(0, 0, 0, 1);
+    margin-left: 33px;
+  }
+  button{
+    border-width: 0;
+    background-color: rgba(0, 0, 0, 0);
+    margin-right: 100px;
+  }
